@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Prasca Seguros | Tu tranquilidad, nuestro compromiso</title>
+<meta name="description" content="Prasca Seguros. Asesoría profesional en seguros generales, vida, inversiones, cumplimiento y salud. Más de 20 años de experiencia.">
+<style>
+:root{--blue:#1d9bdd;--deep:#075f91;--navy:#123a52;--sky:#eaf7fd;--ink:#17384c;--muted:#607687;--line:#dcebf3;--white:#fff;--shadow:0 18px 48px rgba(9,76,110,.12);--r:24px}
+*{box-sizing:border-box}html{scroll-behavior:smooth}body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,"Segoe UI",sans-serif;color:var(--ink);background:#fff}a{text-decoration:none;color:inherit}.container{width:min(1140px,92%);margin:auto}
+header{position:sticky;top:0;z-index:99;background:rgba(255,255,255,.96);backdrop-filter:blur(15px);border-bottom:1px solid var(--line)}
+.nav{min-height:78px;display:flex;align-items:center;justify-content:space-between;gap:20px}.brand img{width:220px;max-width:48vw;display:block}.links{display:flex;align-items:center;gap:23px;font-size:14px;font-weight:750;color:#35576b}.links a:hover{color:var(--blue)}.contact-top{background:var(--blue);color:#fff!important;padding:11px 17px;border-radius:999px;box-shadow:0 8px 22px rgba(29,155,221,.22)}@media(max-width:780px){.links a:not(.contact-top){display:none}}
+.hero{overflow:hidden;position:relative;color:#fff;background:radial-gradient(circle at 85% 15%,rgba(255,255,255,.18),transparent 25%),linear-gradient(135deg,#0f91d0,#1d9bdd 53%,#087bb7)}
+.hero:before{content:"";position:absolute;width:540px;height:540px;border-radius:50%;border:1px solid rgba(255,255,255,.14);right:-190px;bottom:-310px}.hero-grid{min-height:610px;display:grid;grid-template-columns:1.08fr .92fr;align-items:center;gap:55px;padding:70px 0}
+.eyebrow{font-size:13px;text-transform:uppercase;letter-spacing:1.7px;font-weight:850;margin-bottom:16px;display:flex;gap:9px;align-items:center}.eyebrow:before{content:"";width:30px;height:2px;background:currentColor}
+.hero h1{font-size:clamp(44px,6vw,74px);line-height:.98;letter-spacing:-3px;margin:0 0 18px}.hero h1 span{font-weight:500}.tag{font-size:clamp(21px,2.7vw,29px);margin-bottom:19px}.hero p{font-size:18px;line-height:1.7;max-width:650px;color:rgba(255,255,255,.93);margin:0 0 30px}
+.actions{display:flex;flex-wrap:wrap;gap:12px}.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;padding:14px 20px;border-radius:999px;font-weight:800;transition:.2s}.btn:hover{transform:translateY(-2px)}.primary{background:#fff;color:var(--deep);box-shadow:0 13px 28px rgba(0,0,0,.14)}.ghost{border:1px solid rgba(255,255,255,.45);color:#fff;background:rgba(255,255,255,.06)}
+.hero-visual{background:rgba(255,255,255,.1);border:1px solid rgba(255,255,255,.25);border-radius:34px;padding:30px;box-shadow:0 25px 60px rgba(0,45,75,.18);backdrop-filter:blur(8px)}.hero-visual img{width:100%;display:block;margin:auto;filter:drop-shadow(0 14px 25px rgba(0,30,60,.16))}
+.trust{background:#fff;margin-top:-28px;position:relative;z-index:4;border:1px solid var(--line);border-radius:20px;box-shadow:var(--shadow);padding:20px 25px;display:grid;grid-template-columns:repeat(3,1fr);gap:20px}.trust-item{display:flex;gap:12px;align-items:center}.trust-icon{width:42px;height:42px;border-radius:14px;background:var(--sky);color:var(--blue);display:grid;place-items:center;font-weight:900}.trust strong{display:block;font-size:14px}.trust span{font-size:12px;color:var(--muted)}
+.section{padding:90px 0}.alt{background:#f7fbfd}.kicker{color:var(--blue);font-size:13px;text-transform:uppercase;letter-spacing:1.6px;font-weight:850;display:flex;align-items:center;gap:9px}.kicker:before{content:"";width:28px;height:2px;background:var(--blue)}h2{font-size:clamp(31px,4vw,46px);line-height:1.1;letter-spacing:-1.4px;margin:12px 0}.lead{font-size:17px;line-height:1.7;color:var(--muted);max-width:760px}
+.service-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:15px;margin-top:36px}.service{border:1px solid var(--line);border-radius:var(--r);padding:24px 20px;background:#fff;box-shadow:0 10px 28px rgba(10,82,116,.05);transition:.2s;position:relative;overflow:hidden}.service:hover{transform:translateY(-6px);box-shadow:var(--shadow);border-color:#bde1f0}.service:after{content:"→";position:absolute;right:18px;top:18px;color:var(--blue);font-weight:900}.svc-art{height:105px;border-radius:18px;background:linear-gradient(145deg,#e9f8fe,#f8fdff);display:grid;place-items:center;margin-bottom:18px}.svc-art svg{width:80px;height:80px}.service h3{margin:0 0 8px;font-size:17px}.service p{margin:0;color:var(--muted);font-size:13px;line-height:1.6}
+.detail{padding-top:30px;scroll-margin-top:90px}.detail-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:28px}.detail-card{background:#fff;border:1px solid var(--line);border-radius:18px;padding:20px}.detail-card h4{margin:0 0 7px;font-size:16px}.detail-card p{margin:0;color:var(--muted);font-size:13px;line-height:1.6}.back{display:inline-block;margin-top:20px;color:var(--blue);font-weight:800;font-size:13px}
+.insurer-box{margin-top:35px;background:#fff;border:1px solid var(--line);border-radius:28px;padding:34px;box-shadow:var(--shadow)}.logos{display:grid;grid-template-columns:repeat(4,1fr);gap:14px}.logo-tile{min-height:110px;border:1px solid var(--line);border-radius:18px;display:flex;align-items:center;justify-content:center;padding:15px;text-align:center;background:#fff;transition:.2s}.logo-tile:hover{transform:translateY(-3px);box-shadow:0 10px 25px rgba(10,82,116,.08)}.wordmark{font-weight:900;font-size:20px;letter-spacing:-.7px}.hdi{color:#0b3b8f}.mapfre{color:#e21e2b}.axa{color:#102b70}.estado{color:#003b79}.mundial{color:#0080a8}.bolivar{color:#0076bd}.chubb{color:#111}.sura{color:#009b78}
+.about{display:grid;grid-template-columns:.9fr 1.1fr;gap:55px;align-items:center}.about-visual{border-radius:32px;background:linear-gradient(145deg,#e9f8fe,#dff2fa);min-height:390px;display:grid;place-items:center;overflow:hidden;position:relative}.about-visual:before,.about-visual:after{content:"";position:absolute;border-radius:50%;border:1px solid rgba(29,155,221,.18)}.about-visual:before{width:330px;height:330px}.about-visual:after{width:235px;height:235px}.about-visual svg{width:190px;position:relative;z-index:2}.points{display:grid;gap:16px;margin-top:26px}.point{display:flex;gap:12px}.check{width:30px;height:30px;border-radius:10px;background:var(--sky);color:var(--blue);display:grid;place-items:center;font-weight:900;flex:none}.point strong{display:block;margin-bottom:3px}.point span{color:var(--muted);font-size:14px;line-height:1.6}
+.neuro{margin-top:45px;background:linear-gradient(135deg,#0b78b0,#1d9bdd);color:#fff;border-radius:32px;padding:40px;display:grid;grid-template-columns:1.1fr .9fr;gap:35px;align-items:center;box-shadow:var(--shadow)}.neuro h3{font-size:30px;margin:0 0 10px}.neuro p{line-height:1.7;color:rgba(255,255,255,.9)}.neuro-list{display:grid;gap:10px}.neuro-list div{padding:14px 16px;border:1px solid rgba(255,255,255,.25);border-radius:14px;background:rgba(255,255,255,.08);font-weight:700}
+.contact{border-radius:34px;background:linear-gradient(135deg,#075f91,#1d9bdd);color:#fff;padding:48px;display:grid;grid-template-columns:1.2fr .8fr;gap:30px;align-items:center;box-shadow:var(--shadow)}.contact h2{margin:0 0 12px;font-size:38px}.contact p{line-height:1.7;color:rgba(255,255,255,.9)}.contact-actions{display:grid;gap:11px}.contact-actions .btn{width:100%}
+footer{background:#063e5d;color:rgba(255,255,255,.72);padding:36px 0}.foot{display:flex;justify-content:space-between;align-items:center;gap:20px}.foot img{width:185px}.foot-right{text-align:right;font-size:13px;line-height:1.8}
+.float{position:fixed;right:20px;bottom:20px;z-index:100;width:59px;height:59px;border-radius:50%;display:grid;place-items:center;background:#25d366;color:#fff;font-size:25px;box-shadow:0 12px 30px rgba(0,0,0,.22)}
+@media(max-width:950px){.service-grid{grid-template-columns:repeat(2,1fr)}.logos{grid-template-columns:repeat(2,1fr)}.hero-grid,.about,.contact,.neuro{grid-template-columns:1fr}.detail-grid{grid-template-columns:repeat(2,1fr)}.trust{grid-template-columns:1fr}}
+@media(max-width:540px){.service-grid,.detail-grid,.logos{grid-template-columns:1fr}.section{padding:68px 0}.hero-grid{padding:56px 0}.hero h1{letter-spacing:-2px}.contact,.neuro{padding:28px 22px}.foot{flex-direction:column;align-items:flex-start}.foot-right{text-align:left}}
+
+.emergency-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin-top:34px}
+.emergency-card{background:#fff;border:1px solid #dcecf5;border-radius:22px;padding:25px;box-shadow:0 10px 30px rgba(10,82,116,.06)}
+.emergency-card h3{margin:0 0 10px;font-size:18px}.emergency-card p{color:#607482;line-height:1.62;font-size:14px;margin:0}
+.stepno{width:36px;height:36px;border-radius:50%;display:grid;place-items:center;background:#e9f8fe;color:#168fc9;font-weight:900;margin-bottom:14px}
+.claim-box{margin-top:28px;background:linear-gradient(135deg,#087db6,#1d9bdd);color:#fff;border-radius:28px;padding:34px;display:grid;grid-template-columns:1.2fr .8fr;gap:25px;align-items:center}
+.claim-box p{color:rgba(255,255,255,.9);line-height:1.65}.claim-actions{display:grid;gap:10px}
+.assist-intro{background:#eaf8fe;border:1px solid #c8eaf8;border-radius:22px;padding:24px;margin:28px 0}
+.assist-intro strong{color:#087db6}
+.assist-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:16px;margin-top:25px}
+.assist-card{background:#fff;border:1px solid #dcecf5;border-radius:20px;padding:23px}
+.assist-card h3{margin:0 0 7px;font-size:19px}.assist-card .phones{font-size:14px;line-height:1.75;color:#405d6d;margin:12px 0}
+.assist-card .official{display:inline-flex;padding:9px 13px;border-radius:999px;background:#eef8fd;color:#087db6;font-weight:800;font-size:12px}
+.notice{font-size:12px;color:#728592;line-height:1.6;margin-top:20px}
+.contact-data{display:flex;flex-wrap:wrap;gap:10px;margin-top:18px}.contact-chip{background:rgba(255,255,255,.12);border:1px solid rgba(255,255,255,.28);padding:9px 12px;border-radius:999px;font-size:13px}
+@media(max-width:900px){.emergency-grid,.assist-grid,.claim-box{grid-template-columns:1fr}}
+
+</style>
+</head>
+<body>
+<header>
+<div class="container nav">
+<a class="brand" href="#inicio"><img src="data:image/png;base64,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" alt="Prasca Seguros"></a>
+<nav class="links"><a href="#seguros">Seguros</a><a href="#siniestros">Siniestros</a><a href="#asistencias">Asistencias</a><a href="#aseguradoras">Aseguradoras</a><a href="#nosotros">Nosotros</a><a class="contact-top" href="https://wa.me/573114508516?text=Hola%20Prasca%20Seguros,%20quiero%20recibir%20asesor%C3%ADa." target="_blank">311 450 8516</a></nav>
+</div>
+</header>
+
+<main id="inicio">
+<section class="hero">
+<div class="container hero-grid">
+<div>
+<div class="eyebrow">PRASCA SEGUROS</div>
+<h1>Protegemos lo que<br><span>más valoras.</span></h1>
+<div class="tag">Tu tranquilidad, nuestro compromiso.</div>
+<p><strong>Asesores profesionales en Seguros Generales, Vida e Inversiones.</strong><br>Encontramos contigo la protección que necesitas, con experiencia, claridad y acompañamiento cercano.</p>
+<div class="actions"><a class="btn primary" href="https://wa.me/573114508516?text=Hola%20Prasca%20Seguros,%20quiero%20una%20asesor%C3%ADa." target="_blank">💬 Quiero asesoría</a><a class="btn ghost" href="#seguros">Conoce nuestras soluciones ↓</a></div>
+</div>
+<div class="hero-visual">
+<img src="data:image/png;base64,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" alt="Prasca Seguros">
+<svg viewBox="0 0 500 180" aria-hidden="true">
+<path d="M20 130 C90 40 155 160 225 78 S355 55 480 25" fill="none" stroke="rgba(255,255,255,.55)" stroke-width="4" stroke-linecap="round"/>
+<circle cx="225" cy="78" r="9" fill="#fff"/><circle cx="480" cy="25" r="9" fill="#fff"/>
+</svg>
+</div>
+</div>
+</section>
+
+<div class="container trust">
+<div class="trust-item"><div class="trust-icon">20+</div><div><strong>Más de 20 años</strong><span>de experiencia en el mercado asegurador</span></div></div>
+<div class="trust-item"><div class="trust-icon">✓</div><div><strong>Asesoría responsable</strong><span>soluciones claras y acompañamiento</span></div></div>
+<div class="trust-item"><div class="trust-icon">♡</div><div><strong>Protección cercana</strong><span>pensada para personas y empresas</span></div></div>
+</div>
+
+<section class="section" id="seguros">
+<div class="container">
+<span class="kicker">Soluciones de protección</span>
+<h2>Encuentra la protección que necesitas</h2>
+<p class="lead">Haz clic en cada opción y conoce, de manera sencilla, los principales seguros y soluciones que podemos ayudarte a gestionar.</p>
+<div class="service-grid">
+<a class="service" href="#generales"><div class="svc-art"><svg viewBox="0 0 100 100"><path d="M20 47 50 22l30 25v33H20Z" fill="none" stroke="#1d9bdd" stroke-width="5"/><path d="M43 80V60h14v20" fill="none" stroke="#1d9bdd" stroke-width="5"/><path d="M32 48h36" stroke="#1d9bdd" stroke-width="5"/></svg></div><h3>Seguros Generales</h3><p>Protege tu hogar, auto, empresa, bienes y patrimonio.</p></a>
+<a class="service" href="#vida"><div class="svc-art"><svg viewBox="0 0 100 100"><path d="M50 78S22 62 22 40c0-13 16-21 28-7 12-14 28-6 28 7 0 22-28 38-28 38Z" fill="none" stroke="#1d9bdd" stroke-width="5"/></svg></div><h3>Vida</h3><p>Protección para ti y para quienes dependen de ti.</p></a>
+<a class="service" href="#inversiones"><div class="svc-art"><svg viewBox="0 0 100 100"><rect x="22" y="22" width="56" height="56" rx="7" fill="none" stroke="#1d9bdd" stroke-width="5"/><path d="M34 65 47 50l10 9 13-20" fill="none" stroke="#1d9bdd" stroke-width="5"/></svg></div><h3>Inversiones</h3><p>Alternativas para construir y proteger tus objetivos.</p></a>
+<a class="service" href="#cumplimiento"><div class="svc-art"><svg viewBox="0 0 100 100"><path d="M50 15 78 25v22c0 18-12 30-28 38C34 77 22 65 22 47V25Z" fill="none" stroke="#1d9bdd" stroke-width="5"/><path d="m36 49 9 9 20-22" fill="none" stroke="#1d9bdd" stroke-width="5"/></svg></div><h3>Cumplimiento</h3><p>Garantías para respaldar tus compromisos contractuales.</p></a>
+<a class="service" href="#salud"><div class="svc-art"><svg viewBox="0 0 100 100"><path d="M43 22h14v21h21v14H57v21H43V57H22V43h21Z" fill="none" stroke="#1d9bdd" stroke-width="5"/></svg></div><h3>Salud</h3><p>Opciones para cuidar tu bienestar y el de tu familia.</p></a>
+</div>
+
+<div class="detail" id="generales">
+<h2>Seguros Generales</h2><p class="lead">Protección para el patrimonio, los bienes y las responsabilidades que hacen parte de tu vida o de tu empresa.</p>
+<div class="detail-grid">
+<div class="detail-card"><h4>🚗 Autos</h4><p>Protección para vehículos, daños, hurto y responsabilidad civil, según la póliza.</p></div>
+<div class="detail-card"><h4>🏠 Hogar</h4><p>Protección para vivienda, contenidos y diferentes riesgos del hogar.</p></div>
+<div class="detail-card"><h4>🏢 Copropiedades</h4><p>Soluciones para edificios y conjuntos, incluyendo bienes comunes y responsabilidades.</p></div>
+<div class="detail-card"><h4>💼 Pymes</h4><p>Protección integral para establecimientos, equipos, inventarios y responsabilidades.</p></div>
+<div class="detail-card"><h4>🤝 Responsabilidad Civil</h4><p>Respaldo frente a perjuicios que puedan generarse a terceros por la actividad asegurada.</p></div>
+<div class="detail-card"><h4>📦 Transporte</h4><p>Protección para mercancías durante su movilización, de acuerdo con las condiciones contratadas.</p></div>
+<div class="detail-card"><h4>🏗️ Construcción</h4><p>Alternativas para proyectos de construcción y riesgos asociados a la obra.</p></div>
+<div class="detail-card"><h4>⚙️ Maquinaria y equipos</h4><p>Protección para maquinaria, equipos eléctricos y electrónicos, según sus características.</p></div>
+<div class="detail-card"><h4>🔑 Arrendamiento</h4><p>Soluciones para propietarios y arrendadores frente a determinados riesgos del contrato.</p></div>
+<div class="detail-card"><h4>🔥 Incendio y terremoto</h4><p>Protección patrimonial frente a eventos de la naturaleza y otros riesgos cubiertos.</p></div>
+<div class="detail-card"><h4>🏗️ Todo Riesgo</h4><p>Opciones para bienes y proyectos que requieren una protección más amplia.</p></div>
+<div class="detail-card"><h4>📄 Otros riesgos</h4><p>Analizamos cada necesidad para identificar la alternativa de aseguramiento adecuada.</p></div>
+</div><a class="back" href="#seguros">↑ Volver a soluciones</a>
+</div>
+
+<div class="detail" id="vida">
+<h2>Vida y protección personal</h2><p class="lead">Porque proteger a tu familia también es una forma de cuidar tus proyectos y el futuro que estás construyendo.</p>
+<div class="detail-grid">
+<div class="detail-card"><h4>❤️ Vida Individual</h4><p>Protección económica para tus beneficiarios ante los eventos contemplados en la póliza.</p></div>
+<div class="detail-card"><h4>👥 Vida Grupo</h4><p>Alternativas de protección para grupos de personas y organizaciones.</p></div>
+<div class="detail-card"><h4>🛡️ Accidentes Personales</h4><p>Respaldo ante accidentes, conforme a las coberturas contratadas.</p></div>
+<div class="detail-card"><h4>💳 Vida con ahorro</h4><p>Soluciones que pueden combinar protección y componentes de ahorro, según producto.</p></div>
+</div><a class="back" href="#seguros">↑ Volver a soluciones</a>
+</div>
+
+<div class="detail" id="inversiones">
+<h2>Inversiones y planificación</h2><p class="lead">Te orientamos para revisar alternativas que combinen tus objetivos de protección, ahorro y planificación financiera.</p>
+<div class="detail-grid">
+<div class="detail-card"><h4>📈 Ahorro programado</h4><p>Alternativas para organizar objetivos de ahorro de mediano y largo plazo.</p></div>
+<div class="detail-card"><h4>🎯 Protección + ahorro</h4><p>Productos que pueden integrar componentes de protección y acumulación, según condiciones.</p></div>
+<div class="detail-card"><h4>🧭 Planificación</h4><p>Acompañamiento para identificar objetivos y revisar alternativas disponibles.</p></div>
+</div><a class="back" href="#seguros">↑ Volver a soluciones</a>
+</div>
+
+<div class="detail" id="cumplimiento">
+<h2>Cumplimiento</h2><p class="lead">Cuando un contrato exige garantías, te acompañamos a estructurar la solución de acuerdo con las obligaciones pactadas.</p>
+<div class="detail-grid">
+<div class="detail-card"><h4>📋 Seriedad de oferta</h4><p>Garantía asociada a procesos de contratación, de acuerdo con sus condiciones.</p></div>
+<div class="detail-card"><h4>🤝 Cumplimiento de contrato</h4><p>Respaldo frente a obligaciones contractuales cubiertas por la póliza.</p></div>
+<div class="detail-card"><h4>💰 Buen manejo del anticipo</h4><p>Garantía relacionada con la correcta destinación del anticipo, según contrato.</p></div>
+<div class="detail-card"><h4>👷 Salarios y prestaciones</h4><p>Garantía para obligaciones laborales cuando el contrato así lo exige.</p></div>
+<div class="detail-card"><h4>🏗️ Estabilidad y calidad</h4><p>Alternativas para obligaciones posteriores relacionadas con estabilidad o calidad.</p></div>
+<div class="detail-card"><h4>🔎 Análisis del contrato</h4><p>Revisamos las condiciones para orientar la estructura de las garantías requeridas.</p></div>
+</div><a class="back" href="#seguros">↑ Volver a soluciones</a>
+</div>
+
+<div class="detail" id="salud">
+<h2>Salud</h2><p class="lead">Opciones de protección para que tú y tu familia puedan acceder a alternativas de atención y bienestar según el producto elegido.</p>
+<div class="detail-grid">
+<div class="detail-card"><h4>🏥 Pólizas de salud</h4><p>Alternativas de cobertura en salud de acuerdo con las condiciones del plan.</p></div>
+<div class="detail-card"><h4>🩺 Medicina prepagada</h4><p>Opciones de atención y acceso a servicios según el producto y la red contratada.</p></div>
+<div class="detail-card"><h4>👨‍👩‍👧 Protección familiar</h4><p>Soluciones para revisar las necesidades de protección de tu núcleo familiar.</p></div>
+</div><a class="back" href="#seguros">↑ Volver a soluciones</a>
+</div>
+</div>
+</section>
+
+
+<section class="section" id="siniestros">
+<div class="container">
+<span class="kicker">Acompañamiento en reclamaciones</span>
+<h2>¿Tuviste un siniestro?</h2>
+<p class="lead">Queremos acompañarte desde el primer momento. Si ocurrió un evento que pueda estar cubierto por tu póliza, <strong>da aviso lo antes posible</strong> y envíanos la información y los soportes disponibles al correo <strong>aleprasca@hotmail.com</strong>. Revisaremos el caso contigo y te orientaremos en el proceso ante la aseguradora.</p>
+
+<div class="claim-box" style="margin-bottom:28px">
+<div>
+<h2 style="margin:0 0 10px">📩 Canal para aviso de siniestros</h2>
+<p>Envía tu aviso y documentos a:</p>
+<p style="font-size:22px;font-weight:900;margin:8px 0">aleprasca@hotmail.com</p>
+<p style="margin-bottom:0">Asunto sugerido: <strong>AVISO DE SINIESTRO – Nombre del asegurado – Aseguradora</strong></p>
+</div>
+<div class="claim-actions">
+<a class="btn primary" href="mailto:aleprasca@hotmail.com?subject=AVISO%20DE%20SINIESTRO%20-%20Nombre%20del%20asegurado%20-%20Aseguradora&body=Nombre%20del%20asegurado%3A%0ADocumento%20o%20NIT%3A%0AAseguradora%3A%0AN%C3%BAmero%20de%20p%C3%B3liza%3A%0AFecha%20y%20hora%20del%20siniestro%3A%0ALugar%3A%0ADescripci%C3%B3n%20de%20lo%20ocurrido%3A%0ABienes%20o%20personas%20afectadas%3A%0ADatos%20de%20contacto%3A">✉ Enviar aviso por correo</a>
+</div>
+</div>
+
+<h2 style="font-size:30px;margin-top:42px">Obligaciones y deberes importantes en caso de siniestro</h2>
+<p class="lead">Además de revisar las condiciones particulares de tu póliza, ten presentes estas actuaciones generales:</p>
+
+<div class="emergency-grid">
+<div class="emergency-card"><div class="stepno">1</div><h3>Dar aviso oportuno</h3><p>Comunica la ocurrencia del siniestro tan pronto como sea posible. Como regla general en Colombia, el aviso debe darse dentro de los tres días siguientes a la fecha en que el asegurado o beneficiario conoció o debió conocer su ocurrencia, salvo las particularidades legalmente aplicables.</p></div>
+<div class="emergency-card"><div class="stepno">2</div><h3>Evitar la extensión del daño</h3><p>Actúa razonablemente para evitar que el daño aumente y protege los bienes afectados, siempre priorizando la seguridad de las personas. Conserva evidencia de las medidas adoptadas.</p></div>
+<div class="emergency-card"><div class="stepno">3</div><h3>Demostrar lo ocurrido</h3><p>El asegurado o beneficiario debe poder acreditar la ocurrencia del siniestro y, cuando corresponda, la cuantía de la pérdida. Por eso es importante conservar fotografías, videos, facturas, informes y demás pruebas disponibles.</p></div>
+<div class="emergency-card"><div class="stepno">4</div><h3>Conservar bienes y evidencias</h3><p>No deseches, alteres ni repares definitivamente los bienes afectados antes de documentarlos y recibir orientación, cuando las circunstancias lo permitan. En una emergencia, primero protege la vida y evita daños mayores.</p></div>
+<div class="emergency-card"><div class="stepno">5</div><h3>Informar con claridad</h3><p>Relata los hechos de forma completa y veraz: qué ocurrió, cuándo, dónde, cómo sucedió, qué resultó afectado y quiénes intervinieron. Informa también si participaron autoridades o terceros.</p></div>
+<div class="emergency-card"><div class="stepno">6</div><h3>Atender requerimientos</h3><p>Conserva y aporta los soportes idóneos y pertinentes que permitan acreditar el siniestro y su cuantía cuando aplique. Los documentos definitivos pueden variar según el ramo, la cobertura y las circunstancias del evento.</p></div>
+</div>
+
+<h2 style="font-size:30px;margin-top:48px">¿Qué debes enviar con el aviso?</h2>
+<p class="lead">Para iniciar nuestro acompañamiento, adjunta <strong>los documentos que tengas disponibles</strong>. No todos los documentos aplican a todos los siniestros.</p>
+
+<div class="emergency-grid">
+<div class="emergency-card"><h3>📄 Información básica</h3><p><strong>•</strong> Nombre completo o razón social del asegurado.<br><strong>•</strong> Cédula o NIT.<br><strong>•</strong> Teléfono y correo de contacto.<br><strong>•</strong> Aseguradora y número de póliza, si lo tienes.<br><strong>•</strong> Fecha, hora y lugar del siniestro.</p></div>
+<div class="emergency-card"><h3>📝 Relato de los hechos</h3><p>Descripción clara de qué ocurrió, cómo ocurrió, posibles causas conocidas, bienes o personas afectadas y datos de terceros involucrados. Indica si hubo atención de Policía, Bomberos, Tránsito u otra autoridad.</p></div>
+<div class="emergency-card"><h3>📷 Evidencia</h3><p>Fotografías y videos del lugar y de los daños, informes de autoridades, denuncias cuando correspondan, declaraciones o datos de terceros y cualquier otro soporte que ayude a acreditar el evento.</p></div>
+<div class="emergency-card"><h3>💰 Soportes de la pérdida</h3><p>Facturas de compra, cotizaciones o presupuestos de reparación/reposición, inventarios, comprobantes, informes técnicos y demás soportes disponibles que permitan establecer el valor de la pérdida, cuando aplique.</p></div>
+<div class="emergency-card"><h3>🚗 Si es un vehículo</h3><p>Además de lo anterior, envía placa y datos del vehículo, licencia de tránsito, licencia de conducción del conductor, fotografías, datos de terceros y autoridad que atendió el evento, cuando aplique.</p></div>
+<div class="emergency-card"><h3>⚖️ Responsabilidad Civil</h3><p>Remite también las reclamaciones, cartas, correos, citaciones, demandas o comunicaciones recibidas del tercero afectado. Evita reconocer responsabilidad, conciliar o realizar pagos sin consultar previamente el procedimiento aplicable.</p></div>
+</div>
+
+<div class="assist-intro" style="margin-top:30px">
+<strong>Importante:</strong> esta es una guía general para facilitar el aviso inicial. Cada aseguradora y cada ramo puede requerir soportes adicionales según la póliza y las circunstancias del caso. La reclamación puede acreditarse mediante medios probatorios idóneos, conducentes y pertinentes; por ello, esta lista no pretende convertir documentos específicos en requisitos legales universales.
+</div>
+
+<div class="claim-box">
+<div>
+<h2 style="margin:0 0 10px">¿Ya tienes la información?</h2>
+<p>Envía el aviso y los archivos disponibles a <strong>aleprasca@hotmail.com</strong>. Si los archivos pesan demasiado, envía primero el correo de aviso y contáctanos para coordinar el envío de los soportes.</p>
+</div>
+<div class="claim-actions">
+<a class="btn primary" href="mailto:aleprasca@hotmail.com?subject=AVISO%20DE%20SINIESTRO%20-%20Nombre%20del%20asegurado%20-%20Aseguradora">✉ Reportar siniestro por correo</a>
+</div>
+</div>
+<p class="notice"><strong>En una emergencia:</strong> utiliza primero la línea de asistencia de tu aseguradora o los servicios de emergencia correspondientes. El aviso a Prasca Seguros no sustituye la atención inmediata de una urgencia.</p>
+</div>
+</section>
+
+<section class="section alt" id="asistencias">
+<div class="container">
+<span class="kicker">Ayuda inmediata</span>
+<h2>¿Necesitas un servicio de asistencia por emergencia?</h2>
+<p class="lead">La asistencia es un servicio que puede estar incluido en tu póliza para ayudarte ante situaciones imprevistas. Dependiendo del seguro contratado, puede contemplar servicios como grúa, carro taller, conductor elegido, cerrajería, plomería, electricidad, orientación jurídica, asistencia médica, ambulancia, asistencia en viaje, exequial u otros beneficios.</p>
+<div class="assist-intro"><strong>Antes de solicitar un servicio:</strong> ten a mano tu documento de identidad, placa del vehículo o dirección del riesgo cuando aplique, número de póliza si lo conoces y una descripción clara de la emergencia. Los servicios, límites, número de eventos y condiciones dependen de cada póliza.</div>
+
+<div class="assist-grid">
+<div class="assist-card"><h3>HDI Seguros</h3><div class="phones"><strong>Bogotá:</strong> 601 307 8320<br><strong>Nacional:</strong> 01 8000 129 728<br><strong>Desde celular:</strong> #204<br><strong>WhatsApp:</strong> 316 834 9339</div><a class="official" href="https://www.hdi.com.co/" target="_blank">Ver sitio oficial ↗</a></div>
+<div class="assist-card"><h3>MAPFRE</h3><div class="phones"><strong>SI 24 / Nacional:</strong> 01 8000 519 991<br><strong>Bogotá:</strong> 601 307 7024<br><strong>Desde celular:</strong> #624<br><strong>WhatsApp:</strong> 318 803 0276</div><a class="official" href="https://www.mapfre.com.co/contacto/" target="_blank">Ver canales oficiales ↗</a></div>
+<div class="assist-card"><h3>AXA COLPATRIA</h3><div class="phones"><strong>Línea integral Bogotá:</strong> 601 423 5757<br><strong>Nacional:</strong> 01 8000 512 620<br><strong>Desde celular:</strong> #247<br><strong>Salud Bogotá:</strong> 601 423 5750</div><a class="official" href="https://www.axacolpatria.co/sac/contactanos" target="_blank">Ver canales oficiales ↗</a></div>
+<div class="assist-card"><h3>Seguros del Estado</h3><div class="phones"><strong>Bogotá / Cundinamarca:</strong> 601 744 3900<br><strong>Nacional:</strong> 01 8000 123 010<br><strong>Desde celular:</strong> #388<br><strong>SOAT:</strong> 601 432 4102</div><a class="official" href="https://www.segurosdelestado.com/pages/Contacto-Tel" target="_blank">Ver canales oficiales ↗</a></div>
+<div class="assist-card"><h3>Seguros Mundial</h3><div class="phones"><strong>Asistencias generales:</strong> 01 8000 118 820<br><strong>Siniestros / Nacional:</strong> 01 8000 111 935<br><strong>Bogotá:</strong> 601 327 4712 / 4713<br><strong>Desde celular:</strong> #935<br><strong>Salud:</strong> 01 8000 112 684</div><a class="official" href="https://www.segurosmundial.com.co/necesitas-ayuda/" target="_blank">Ver canales oficiales ↗</a></div>
+<div class="assist-card"><h3>Seguros Bolívar</h3><div class="phones"><strong>Desde celular:</strong> #322<br><strong>Bogotá:</strong> 601 312 2122<br><strong>Nacional:</strong> 01 8000 123 322<br><strong>WhatsApp:</strong> 322 332 2322</div><a class="official" href="https://www.segurosbolivar.com/canales-de-atencion" target="_blank">Ver canales oficiales ↗</a></div>
+<div class="assist-card"><h3>Chubb</h3><div class="phones"><strong>Asistencia 24 horas Bogotá:</strong> 601 319 0402 opción 2<br><strong>Nacional:</strong> 01 8000 917 500 opción 2<br><strong>Siniestros:</strong> mismas líneas, opción 1</div><a class="official" href="https://www.chubb.com/co-es/siniestros/puntos-de-atencion-y-radicacion-de-siniestros.html" target="_blank">Ver canales oficiales ↗</a></div>
+<div class="assist-card"><h3>SURA</h3><div class="phones"><strong>Desde celular:</strong> #888<br><strong>Bogotá:</strong> 601 437 8888<br><strong>Cali:</strong> 602 437 8888<br><strong>Medellín:</strong> 604 437 8888<br><strong>Nacional:</strong> 01 8000 51 8888</div><a class="official" href="https://www.segurossura.com.co/" target="_blank">Ver sitio oficial ↗</a></div>
+</div>
+<p class="notice"><strong>Nota:</strong> las líneas pueden ser actualizadas por cada aseguradora. Antes de solicitar una asistencia, confirma que el servicio esté incluido en tu póliza. Dejamos acceso al sitio oficial de cada compañía para facilitar la verificación.</p>
+</div>
+</section>
+
+<section class="section alt" id="aseguradoras">
+<div class="container">
+<span class="kicker">Nuestro respaldo</span><h2>Aseguradoras con las que trabajamos</h2>
+<p class="lead">Contamos con diferentes compañías aseguradoras para analizar alternativas y buscar una solución coherente con cada necesidad.</p>
+<div class="insurer-box">
+<div class="logos">
+<div class="logo-tile"><div class="wordmark hdi">HDI<br><small>SEGUROS</small></div></div>
+<div class="logo-tile"><div class="wordmark mapfre">MAPFRE</div></div>
+<div class="logo-tile"><div class="wordmark axa">AXA<br><small>COLPATRIA</small></div></div>
+<div class="logo-tile"><div class="wordmark estado">SEGUROS<br>DEL ESTADO</div></div>
+<div class="logo-tile"><div class="wordmark mundial">MUNDIAL<br>SEGUROS</div></div>
+<div class="logo-tile"><div class="wordmark bolivar">BOLÍVAR<br><small>SEGUROS</small></div></div>
+<div class="logo-tile"><div class="wordmark chubb">CHUBB</div></div>
+<div class="logo-tile"><div class="wordmark sura">SURA</div></div>
+</div>
+<p style="font-size:12px;color:#7b8c98;margin:18px 0 0">Las marcas y logotipos pertenecen a sus respectivos titulares. Su uso en esta página identifica las compañías con las que se trabaja y no implica propiedad sobre sus marcas.</p>
+</div>
+</div>
+</section>
+
+<section class="section" id="nosotros">
+<div class="container about">
+<div class="about-visual">
+<svg viewBox="0 0 220 220" aria-hidden="true"><path d="M110 28 178 53v51c0 43-28 69-68 89-40-20-68-46-68-89V53Z" fill="#fff" stroke="#1d9bdd" stroke-width="7"/><circle cx="110" cy="91" r="23" fill="#e9f8fe" stroke="#1d9bdd" stroke-width="6"/><path d="M68 155c10-31 74-31 84 0" fill="none" stroke="#1d9bdd" stroke-width="7" stroke-linecap="round"/><path d="M96 91h28M110 77v28" stroke="#1d9bdd" stroke-width="5" stroke-linecap="round"/></svg>
+</div>
+<div>
+<span class="kicker">Nosotros</span><h2>Experiencia que se convierte en tranquilidad</h2>
+<p class="lead">En <strong>Prasca Seguros</strong> somos asesores de seguros con <strong>más de 20 años de experiencia en el mercado asegurador</strong>. Durante este tiempo hemos acompañado a personas, familias y empresas en una decisión que va mucho más allá de contratar una póliza: <strong>proteger aquello que han construido con esfuerzo.</strong></p>
+<p class="lead">Trabajamos con responsabilidad, compromiso y una mirada cercana. Escuchamos antes de recomendar, explicamos antes de decidir y acompañamos durante el camino, para que nuestros asegurados puedan tomar decisiones con mayor claridad y confianza.</p>
+<div class="points">
+<div class="point"><div class="check">✓</div><div><strong>Experiencia que respalda nuestras decisiones</strong><span>Conocemos el mercado y analizamos las necesidades de cada persona o empresa antes de plantear alternativas.</span></div></div>
+<div class="point"><div class="check">✓</div><div><strong>Protección pensada para lo que realmente importa</strong><span>Buscamos que entiendas qué estás protegiendo, qué cubre tu póliza y qué debes tener presente.</span></div></div>
+<div class="point"><div class="check">✓</div><div><strong>Acompañamiento cuando más lo necesitas</strong><span>Nuestro compromiso no termina cuando se expide una póliza; estamos para orientarte durante su vigencia y ante las situaciones que puedan presentarse.</span></div></div>
+</div>
+</div>
+</div>
+<div class="container">
+<div class="neuro">
+<div><h3>Sentirte protegido empieza por sentirte acompañado.</h3><p>La tranquilidad no consiste en pensar que nada va a pasar. Consiste en saber que, si ocurre algo inesperado, has tomado una decisión responsable y cuentas con un equipo que conoce tu protección.</p></div>
+<div class="neuro-list"><div>✓ Claridad antes de contratar</div><div>✓ Acompañamiento durante la vigencia</div><div>✓ Experiencia para analizar tus riesgos</div></div>
+</div>
+</div>
+</section>
+
+<section class="section alt">
+<div class="container">
+<div class="contact">
+<div><span class="kicker" style="color:#fff">Hablemos</span><h2>Tu tranquilidad puede empezar hoy.</h2><p>Cuéntanos qué quieres proteger y te ayudaremos a revisar las alternativas disponibles para tu caso.</p><div class="contact-data"><span class="contact-chip">📍 Bogotá, Colombia</span><span class="contact-chip">✉ aleprasca@hotmail.com</span><span class="contact-chip">☎ 311 450 8516</span><span class="contact-chip">☎ 304 523 6722</span></div></div>
+<div class="contact-actions">
+<a class="btn primary" href="https://wa.me/573114508516?text=Hola%20Prasca%20Seguros,%20quiero%20recibir%20asesor%C3%ADa." target="_blank">💬 WhatsApp · 311 450 8516</a>
+<a class="btn ghost" href="https://wa.me/573045236722?text=Hola%20Prasca%20Seguros,%20quiero%20recibir%20asesor%C3%ADa." target="_blank">💬 WhatsApp · 304 523 6722</a>
+<a class="btn ghost" href="mailto:aleprasca@hotmail.com">✉ aleprasca@hotmail.com</a>
+</div>
+</div>
+</div>
+</section>
+</main>
+<footer><div class="container foot"><img src="data:image/png;base64,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" alt="Prasca Seguros"><div class="foot-right">Tu tranquilidad, nuestro compromiso<br><strong>311 450 8516</strong> · 304 523 6722<br>aleprasca@hotmail.com · Bogotá, Colombia</div></div></footer>
+<a class="float" href="https://wa.me/573114508516?text=Hola%20Prasca%20Seguros,%20quiero%20recibir%20asesor%C3%ADa." target="_blank" aria-label="WhatsApp">◔</a>
+</body></html>
