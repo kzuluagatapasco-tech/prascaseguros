@@ -56,6 +56,13 @@ footer{background:#063e5d;color:rgba(255,255,255,.72);padding:36px 0}.foot{displ
 .indicator-card h3{font-size:17px;margin:0 0 14px}.indicator-value{display:block;font-size:clamp(29px,3.5vw,43px);font-weight:850;color:var(--deep);letter-spacing:-1px}
 .indicator-card p{font-size:14px;line-height:1.6;color:var(--muted)}.indicator-card a{color:var(--deep);font-weight:800;text-decoration:underline;text-underline-offset:3px}
 @media(max-width:700px){.indicator-grid{grid-template-columns:1fr}.advisor-portrait img{height:390px}}
+
+.logo-tile{min-height:144px;padding:18px 12px 14px;gap:7px}
+.logo-media{height:82px;width:190px;max-width:100%;display:grid;place-items:center;overflow:hidden}
+.logo-tile .logo-media img{display:block;width:100%;height:100%;object-fit:contain}
+.logo-tile[data-logo="hdi"] .logo-media img,.logo-tile[data-logo="mapfre"] .logo-media img,.logo-tile[data-logo="axa"] .logo-media img,.logo-tile[data-logo="sura"] .logo-media img{width:84px;height:84px}
+.logo-tile[data-logo="mundial"] .logo-media img,.logo-tile[data-logo="chubb"] .logo-media img,.logo-tile[data-logo="bolivar"] .logo-media img{width:190px;height:190px;max-width:none}
+.logo-tile[data-logo="estado"] .logo-media img{width:190px;height:130px;max-width:none}
 </style>
 </head>
 <body>
@@ -231,15 +238,16 @@ footer{background:#063e5d;color:rgba(255,255,255,.72);padding:36px 0}.foot{displ
 <p class="lead">Contamos con diferentes compañías aseguradoras para analizar alternativas y buscar una solución coherente con cada necesidad.</p>
 <div class="insurer-box">
 <div class="logos">
-<div class="logo-tile"><img src="https://www.hdiseguros.com.co/favicon.ico" alt="Identidad visual de HDI Seguros" loading="lazy" onerror="this.hidden=true"><span>HDI Seguros</span></div>
-<div class="logo-tile"><img src="https://www.mapfre.com.co/favicon.ico" alt="Identidad visual de MAPFRE" loading="lazy" onerror="this.hidden=true"><span>MAPFRE</span></div>
-<div class="logo-tile"><img src="https://www.axacolpatria.co/favicon.ico" alt="Identidad visual de AXA COLPATRIA" loading="lazy" onerror="this.hidden=true"><span>AXA COLPATRIA</span></div>
-<div class="logo-tile"><img src="https://www.segurosdelestado.com/favicon.ico" alt="Identidad visual de Seguros del Estado" loading="lazy" onerror="this.hidden=true"><span>Seguros del Estado</span></div>
-<div class="logo-tile"><img src="https://www.segurosmundial.com.co/favicon.ico" alt="Identidad visual de Seguros Mundial" loading="lazy" onerror="this.hidden=true"><span>Seguros Mundial</span></div>
-<div class="logo-tile"><img src="https://www.segurossura.com.co/favicon.ico" alt="Identidad visual de Seguros SURA" loading="lazy" onerror="this.hidden=true"><span>Seguros SURA</span></div>
-<div class="logo-tile"><img src="https://www.segurosbolivar.com/favicon.ico" alt="Identidad visual de Seguros Bolívar" loading="lazy" onerror="this.hidden=true"><span>Seguros Bolívar</span></div>
-<div class="logo-tile"><img src="https://www.chubb.com/co-es/favicon.ico" alt="Identidad visual de Chubb Seguros Colombia" loading="lazy" onerror="this.hidden=true"><span>Chubb Seguros Colombia</span></div>
+<div class="logo-tile" data-logo="hdi"><div class="logo-media"><img src="logos/hdi-seguros.png" alt="Logo de HDI Seguros" loading="lazy" width="190" height="82"></div><span>HDI Seguros</span></div>
+<div class="logo-tile" data-logo="mapfre"><div class="logo-media"><img src="logos/mapfre.png" alt="Logo de MAPFRE" loading="lazy" width="190" height="82"></div><span>MAPFRE</span></div>
+<div class="logo-tile" data-logo="axa"><div class="logo-media"><img src="logos/axa-colpatria.png" alt="Logo de AXA COLPATRIA" loading="lazy" width="190" height="82"></div><span>AXA COLPATRIA</span></div>
+<div class="logo-tile" data-logo="estado"><div class="logo-media"><img src="logos/seguros-del-estado.png" alt="Logo de Seguros del Estado" loading="lazy" width="190" height="82"></div><span>Seguros del Estado</span></div>
+<div class="logo-tile" data-logo="mundial"><div class="logo-media"><img src="logos/seguros-mundial.png" alt="Logo de Seguros Mundial" loading="lazy" width="190" height="82"></div><span>Seguros Mundial</span></div>
+<div class="logo-tile" data-logo="sura"><div class="logo-media"><img src="logos/seguros-sura.png" alt="Logo de Seguros SURA" loading="lazy" width="190" height="82"></div><span>Seguros SURA</span></div>
+<div class="logo-tile" data-logo="bolivar"><div class="logo-media"><img src="logos/seguros-bolivar.png" alt="Logo de Seguros Bolívar" loading="lazy" width="190" height="82"></div><span>Seguros Bolívar</span></div>
+<div class="logo-tile" data-logo="chubb"><div class="logo-media"><img src="logos/chubb.png" alt="Logo de Chubb Seguros Colombia" loading="lazy" width="190" height="82"></div><span>Chubb Seguros Colombia</span></div>
 </div>
+
 <p style="font-size:12px;color:#7b8c98;margin:18px 0 0">Las marcas y logotipos pertenecen a sus respectivos titulares. Su uso en esta página identifica las compañías con las que se trabaja y no implica propiedad sobre sus marcas.</p>
 </div>
 </div>
